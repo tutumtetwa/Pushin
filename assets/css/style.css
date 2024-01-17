@@ -20,7 +20,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("/Users/home/Desktop/Projects/Projects website/background.jpg") top right no-repeat;
+  background: #040404 url("assets/img/background.jpg") top right no-repeat;
   background-size: cover;
   filter: blur(2px) brightness(0.5);
   left: 0;
