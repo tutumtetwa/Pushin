@@ -998,8 +998,22 @@ section .container {
 }
 
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: #63eda3;
 }
+
+.portfolio-details .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* Adjust the height as needed */
+}
+
+.portfolio-details .swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 
 /*--------------------------------------------------------------
 # Contact
