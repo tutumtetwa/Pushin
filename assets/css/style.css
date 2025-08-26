@@ -853,7 +853,7 @@ section .container {
 }
 
 .tech-list li strong {
-  color: #18d26e; /* Makes the label text blue */
+  color: #63b3ed; /* Makes the label text blue */
   font-weight: 700;
   display: block; /* Puts the label on its own line */
   margin-bottom: 0.25rem; /* Adds a little space below the label */
