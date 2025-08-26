@@ -831,40 +831,35 @@ section .container {
   color: #63b3ed; /* Highlight strong tags with the title color */
 }
 
-.tech-stack-grid {
-  display: grid;
-  grid-template-columns: 1fr; /* Single column on small screens */
-  gap: 0.8rem; /* Space between items */
-  margin-bottom: 1.5rem;
-  padding-left: 1rem; /* Indent the grid */
-}
 
-.tech-item {
-  background-color: #2d3748; /* Darker background for tech items */
-  padding: 0.7rem 1rem;
-  border-left: 3px solid #63b3ed; /* Blue left border for emphasis */
-  border-radius: 4px;
-  color: #cbd5e0;
-  font-size: 0.95rem;
-}
 
 .tech-item strong {
     color: #90cdf4; /* Slightly brighter blue for labels */
 }
-
-
-
-/* Responsive adjustments for larger screens */
-@media (min-width: 768px) {
-  .tech-stack-grid {
-    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
-  }
+.tech-list {
+  list-style: none; /* Removes default bullet points */
+  padding-left: 0;
+  margin-bottom: 1.5rem;
 }
 
-@media (min-width: 1024px) {
-  .tech-stack-grid {
-    grid-template-columns: repeat(3, 1fr); /* Three columns on large screens */
-  }
+.tech-list li {
+  background-color: #2d3748; /* Darker background for each item */
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 0.75rem; /* Space between items */
+  border-left: 3px solid #63b3ed; /* Blue left border for emphasis */
+  border-radius: 4px;
+  color: #cbd5e0;
+  font-size: 1rem;
+}
+
+.tech-list li strong {
+  color: #63b3ed; /* Makes the label text blue */
+  font-weight: 700;
+  display: block; /* Puts the label on its own line */
+  margin-bottom: 0.25rem; /* Adds a little space below the label */
+  font-size: 0.9rem;
+  text-transform: uppercase; /* STYLISH: Makes labels uppercase */
+  letter-spacing: 0.05em; /* STYLISH: Adds letter spacing */
 }
 
 
