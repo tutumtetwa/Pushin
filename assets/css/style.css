@@ -852,6 +852,10 @@ section .container {
     color: #90cdf4; /* Slightly brighter blue for labels */
 }
 
+.glightbox-container .gslide {
+  max-width: 1200px; /* You can adjust this value */
+}
+
 /* Responsive adjustments for larger screens */
 @media (min-width: 768px) {
   .tech-stack-grid {
