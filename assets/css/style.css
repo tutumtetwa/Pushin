@@ -802,6 +802,70 @@ section .container {
   border-radius: 4px;
 }
 
+.project-details-content {
+  padding: 1.5rem; /* Add some padding around the content */
+  background-color: #1a202c; /* Slightly darker background for the content box */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  color: #e2e8f0; /* Light text color for readability */
+}
+
+.section-title {
+  font-size: 1.6rem; /* Slightly larger heading */
+  font-weight: 700; /* Bold */
+  color: #63b3ed; /* A nice blue color for titles */
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid rgba(99, 179, 237, 0.3); /* Underline effect */
+  padding-bottom: 0.4rem; /* Space between title and line */
+  letter-spacing: 0.05em; /* A little letter spacing */
+}
+
+.description-text {
+  font-size: 1.05rem; /* Slightly larger body text */
+  line-height: 1.7; /* Increased line height for readability */
+  color: #a0aec0; /* Lighter gray for body text */
+  margin-bottom: 1.5rem; /* More space between paragraphs */
+}
+
+.description-text strong {
+  color: #63b3ed; /* Highlight strong tags with the title color */
+}
+
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column on small screens */
+  gap: 0.8rem; /* Space between items */
+  margin-bottom: 1.5rem;
+  padding-left: 1rem; /* Indent the grid */
+}
+
+.tech-item {
+  background-color: #2d3748; /* Darker background for tech items */
+  padding: 0.7rem 1rem;
+  border-left: 3px solid #63b3ed; /* Blue left border for emphasis */
+  border-radius: 4px;
+  color: #cbd5e0;
+  font-size: 0.95rem;
+}
+
+.tech-item strong {
+    color: #90cdf4; /* Slightly brighter blue for labels */
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 768px) {
+  .tech-stack-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .tech-stack-grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns on large screens */
+  }
+}
+
+
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   background: #18d26e;
