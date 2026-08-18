@@ -648,6 +648,24 @@ section .container {
   position: relative;
 }
 
+.resume .resume-item-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 4px;
+}
+
+.resume .resume-logo {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 8px;
+  padding: 5px;
+  overflow: hidden;
+}
+
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
