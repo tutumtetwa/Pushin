@@ -633,37 +633,10 @@ section .container {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-.resume .resume-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-
-.resume .resume-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 14px;
-  border-radius: 50px;
-  font-size: 13px;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.resume .resume-btn-download {
-  background: #18d26e;
-  color: #fff;
-}
-
-.resume .resume-btn-download:hover {
-  background: #14b862;
-}
-
 .resume .resume-tabs {
   display: flex;
   gap: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .resume .resume-tab-btn {
@@ -709,12 +682,6 @@ section .container {
   width: 100%;
   height: 100%;
   border: 0;
-}
-
-.resume .resume-pdf-actions {
-  margin-top: 20px;
-  margin-bottom: 0;
-  justify-content: center;
 }
 
 .resume .resume-pdf-fallback {
