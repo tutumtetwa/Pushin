@@ -264,6 +264,12 @@
     let target = select('#resume-panel-' + this.getAttribute('data-resume-tab'))
     if (target) {
       target.classList.add('active')
+
+      let pdfFrame = select('#resume-panel-pdf iframe')
+      if (pdfFrame && pdfFrame.dataset.src) {
+        pdfFrame.src = pdfFrame.dataset.src
+        pdfFrame.removeAttribute('data-src')
+      }
     }
   }, true)
 
