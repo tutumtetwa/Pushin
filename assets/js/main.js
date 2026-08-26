@@ -246,8 +246,25 @@
   });
 
   /**
-   * Initiate Pure Counter 
+   * Initiate Pure Counter
    */
   new PureCounter();
+
+  /**
+   * Resume view toggle: Website Resume vs PDF Resume
+   */
+  on('click', '.resume-tab-btn', function(e) {
+    let tabButtons = select('.resume-tab-btn', true)
+    tabButtons.forEach(btn => btn.classList.remove('active'))
+    this.classList.add('active')
+
+    let tabPanels = select('.resume-tab-panel', true)
+    tabPanels.forEach(panel => panel.classList.remove('active'))
+
+    let target = select('#resume-panel-' + this.getAttribute('data-resume-tab'))
+    if (target) {
+      target.classList.add('active')
+    }
+  }, true)
 
 })()

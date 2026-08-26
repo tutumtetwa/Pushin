@@ -71,7 +71,8 @@
       <div class="social-links">
         <a href="https://github.com/TutuMtetwa" class="github" target="_blank"><i class="ri-github-fill"></i></a>
         <a href="https://www.linkedin.com/in/tutu-mtetwa" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="assets/resume/Tutu_Mtetwa_Resume.pdf" class="download" download target="_blank"><i class="ri-download-2-line"></i></a>
+        <a href="assets/resume/Tutu_Mtetwa_Resume.pdf" class="view" target="_blank" title="View Resume"><i class="ri-eye-line"></i></a>
+        <a href="assets/resume/Tutu_Mtetwa_Resume.pdf" class="download" download title="Download Resume"><i class="ri-download-2-line"></i></a>
       </div>
 
     </div>
@@ -264,18 +265,28 @@
 
       <div class="section-title">
         <h2>Resume</h2>
-        <p>
-        <a href="assets/resume/Tutu_Mtetwa_Resume.pdf" download target="_blank">
-          <i class="ri-download-2-line"></i>
-        </a>
-      </p>
+        <p>My Experience</p>
 
+        <div class="resume-actions">
+          <a href="assets/resume/Tutu_Mtetwa_Resume.pdf" target="_blank" class="resume-btn resume-btn-view">
+            <i class="ri-eye-line"></i> View Resume
+          </a>
+          <a href="assets/resume/Tutu_Mtetwa_Resume.pdf" download class="resume-btn resume-btn-download">
+            <i class="ri-download-2-line"></i> Download Resume
+          </a>
+        </div>
+
+        <div class="resume-tabs" role="tablist">
+          <button type="button" class="resume-tab-btn active" data-resume-tab="website">Website Resume</button>
+          <button type="button" class="resume-tab-btn" data-resume-tab="pdf">PDF Resume</button>
+        </div>
       </div>
-      
 
+
+      <div class="resume-tab-panel active" id="resume-panel-website">
       <div class="row">
         <div class="col-lg-6" data-aos="fade-up">
-          
+
 
           <h3 class="resume-title">Education</h3>
           <div class="resume-item">
@@ -287,18 +298,23 @@
                 <p><em>Truman State University, Kirksville, MO</em></p>
               </div>
             </div>
-            <p>As a junior immersed in the vibrant Computer Science program at Truman State University, I am actively honing my skills and knowledge in software development. Combining rigorous coursework with practical experiences, 
-              I am cultivating a robust foundation in areas such as C++, Java, Python, and web development. My journey is not only about academic achievement but also integrating real-world applications, 
+            <p>As a senior in the Computer Science program at Truman State University, I am actively honing my skills and knowledge in software development. Combining rigorous coursework with practical experiences,
+              I am cultivating a robust foundation in areas such as C++, Java, Python, and web development. My journey is not only about academic achievement but also integrating real-world applications,
               ensuring a well-rounded understanding of the evolving tech landscape and positioning me for a dynamic career in software engineering.</p>
               <br>
               <ul>
                 <li>Relevant Coursework
                   <ul>
-                    <li>CS 180 - Object-Oriented Programming I</li>
-                    <li>CS 181 - Object-Oriented Programming II</li>
-                    <li>CS 191 - Computing Structures</li>
-                    <li>CS 250 - Systems Programming</li>
-                  </ul> 
+                    <li>CS 310 - Data Structures & Algorithms</li>
+                    <li>CS 330 - Computer Architecture & Organization</li>
+                    <li>CS 345 - Cyberethics (Writing Enhanced)</li>
+                    <li>CS 370 - Software Engineering (Writing Enhanced)</li>
+                    <li>CS 390 - Operating Systems</li>
+                    <li>CS 430 - Database Systems</li>
+                    <li>CS 455 - Computer Security Fundamentals</li>
+                    <li>CS 495 - Senior Seminar in Computer Science</li>
+                    <li>MATH 357 - Linear Algebra</li>
+                  </ul>
                 </li>
               </ul>
           </div>
@@ -479,9 +495,21 @@
 
         </div>
 
-        
-      </div>
 
+      </div>
+      </div><!-- End Website Resume Panel -->
+
+      <div class="resume-tab-panel" id="resume-panel-pdf">
+        <div class="resume-pdf-viewer">
+          <iframe src="assets/resume/Tutu_Mtetwa_Resume.pdf" title="Tutu Mtetwa Resume PDF"></iframe>
+        </div>
+        <p class="resume-pdf-fallback">
+          Having trouble viewing the embedded PDF?
+          <a href="assets/resume/Tutu_Mtetwa_Resume.pdf" target="_blank">Open it in a new tab</a>
+          or
+          <a href="assets/resume/Tutu_Mtetwa_Resume.pdf" download>download it</a>.
+        </p>
+      </div><!-- End PDF Resume Panel -->
 
     </div>
   </section><!-- End Resume Section -->

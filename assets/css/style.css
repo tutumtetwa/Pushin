@@ -633,6 +633,105 @@ section .container {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+.resume .resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.resume .resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.resume .resume-btn-view {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.resume .resume-btn-view:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.resume .resume-btn-download {
+  background: #18d26e;
+  color: #fff;
+}
+
+.resume .resume-btn-download:hover {
+  background: #14b862;
+}
+
+.resume .resume-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.resume .resume-tab-btn {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #aaaaaa;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.resume .resume-tab-btn:hover {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.resume .resume-tab-btn.active {
+  background: #18d26e;
+  border-color: #18d26e;
+  color: #fff;
+}
+
+.resume .resume-tab-panel {
+  display: none;
+}
+
+.resume .resume-tab-panel.active {
+  display: block;
+}
+
+.resume .resume-pdf-viewer {
+  width: 100%;
+  height: 80vh;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.resume .resume-pdf-viewer iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.resume .resume-pdf-fallback {
+  margin-top: 15px;
+  color: #aaaaaa;
+  font-size: 14px;
+}
+
+.resume .resume-pdf-fallback a {
+  color: #18d26e;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
